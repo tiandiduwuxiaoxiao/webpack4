@@ -1,0 +1,11 @@
+$font-color: grey;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-weight: bold;
+    font-size: 24px;
+    color: $font-color;
+}
