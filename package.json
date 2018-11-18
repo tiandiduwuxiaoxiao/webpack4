@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/lodash": "^4.14.118",
+    "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^4.0.0-beta.4",

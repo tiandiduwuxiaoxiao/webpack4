@@ -1,7 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 var htmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 var config = {
     mode: 'development',
@@ -47,7 +48,8 @@ var config = {
             filename: './index.html',
             chunks: ['main', 'head'],
         }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin([path.join(__dirname, 'dist')])
     ]
 };
 module.exports = function (env) {

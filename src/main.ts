@@ -1,6 +1,7 @@
 import '../index.html';
 import './style.scss';
-const arr = [1, 2, 3, 4, 5];
-arr.map(item => {
-    item*item;
+let arr = [1, 2, 3, 4, 5];
+arr = arr.map(item => {
+    return item*item;
 });
+console.log(arr);
